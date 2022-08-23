@@ -4,8 +4,8 @@ fn main() {
     let tempo_total = 10.0;
 
     let velocidade_media = calc(distancia_total, tempo_total);
-    println!("\n\tResposta: {}m/s", velocidade_media.round());
-    println!("\tResposta: {}km/h\n\n", velocidade_media.round() * 3.6);
+    println!("\n\tResposta: {:.2}m/s", velocidade_media.round());
+    println!("\tResposta: {:.2}km/h\n\n", velocidade_media.round() * 3.6);
 }
 
 fn calc(dt: f64, tt: f64) -> f64 {
